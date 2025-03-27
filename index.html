@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="script.js"></script>
 </head>
+
 <body>
-    My name is Terrell
-</body>
-</html>
+    <section id="landing">
+        <nav>
+            <div class="row nav_row">
+                <div class="nav_logo">
+                    <img class="nav__logo--img" src="./assets/white T purple box.svg" alt="">
+                    <div class="nav__logo--title">Treact
+                    </div>
+                </div>
+            </div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+            </div>
+            <button class="btn__menu" onclick="openmenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="btn__menu--svg">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            </div>
+        </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__description">
+                        <h1>
+                            Beautifuk React Templates <span class="purple"> for you.</span>
+                        </h1>
+                        <p class="header__description--para">Our templates are easy to setup, understand and customize.
+                            Fully modular components with a variety of pages and components.
+                        </p>
+                        <div class="header__email">
+                            <input type="text" class="header__email--input" placeholder="Your E-mail Address" <button
+                                <button class="header__email--btn">Get Started</button>
+                        </div>
+                        <p class="header__customer--title"> OUR TRUSTED CUSTOMERS</p>
+                        <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt=""
+                            class="header__customers">
+                    </div>
+                    <figure class="header__img--wrapper">
+                        <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt=""
+                            class="header__img">
+                    </figure>
+                </div>
+            </div>
+            <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"
+                class="header__blob"></svg>
+            <g transform="translate(300,300)">
+                <path
+                    d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z"
+                    fill="#6415ff"></path>
+            </g>
+            </svg>
+        </header>
+    </section>
+    <main>
+        <section id="features">
+            <div class="container">
+                <div class="row__narrow">
+                    <h4 class="section__tag">FEATURES</h4>
+                    <h2 class="section__title">
+                        We have Amazing <span class="purple">Services.</span>
+                    </h2>
+                    <div class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature__row">
+                                <div class="feature__img--wrapper">
+                                    <img src="shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt=""
+                                        class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title"> Secure</h2>
+                                        <p class="feature__para"> We strictly only deal with vendors that provide top
+                                            notch security</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__row">
+                                    <figure class="feature__img--wrapper">
+                                        <img src="support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt=""
+                                            class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title">24/7 Support</h2>
+                                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                            veniam,
+                                            quis
+                                            nostrud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__row">
+                                    <figure class="feature__img--wrapper">
+                                        <img src="customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt=""
+                                            class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title">Customizable</h2>
+                                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                            veniam,
+                                            quis
+                                            nostrud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__row">
+                                    <figure class="feature__img--wrapper">
+                                        <img src="reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt=""
+                                            class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title">Reliable</h2>
+                                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                            veniam,
+                                            quis
+                                            nostrud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__row">
+                                    <figure class="feature__img--wrapper">
+                                        <img src="fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt=""
+                                            class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title">Fast</h2>
+                                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                            veniam,
+                                            quis
+                                            nostrud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__row">
+                                    <figure class="feature__img--wrapper">
+                                        <img src="simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt=""
+                                            class="feature__img">
+                                    </figure>
+                                    <div class="feature__text">
+                                        <h2 class="feature__title">Easy</h2>
+                                        <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                            veniam,
+                                            quis
+                                            nostrud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="features__blob">
+                <g transform="translate(300,300)">
+                    <path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path>
+                </g>
+            </svg>
+        </section>
+        <section id="quality">
+            <div class="container">
+                <div class="row">
+                    <div class="quality__description">
+                        <div class="section__tag">QUALITY WORK
+                    </div>
+                        <h2 class="section__title">
+                            Designed & Developed by <span class="purple">Professionals.</span>
+        </section>
+    </main>
